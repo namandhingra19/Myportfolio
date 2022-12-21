@@ -1,0 +1,19 @@
+.input[type="range"] {
+    --SliderColor: background-image;
+    --SliderColor: hsl(50, 100%, 50%);
+    -webkit-appearance: none;
+    height: 6px;
+    background: #F2F3F7;
+    border-radius: 5px;
+    background-image: #F2F3F7;
+    background-repeat: no-repeat;
+    padding:0;
+  }
+  
+.input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: var(--SliderColor);
+  }
