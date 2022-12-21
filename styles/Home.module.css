@@ -11,3 +11,11 @@
   cursor: pointer;
   color:#DAD79A;
 }
+.anch{
+  text-decoration: none;
+  color:white;
+}
+.anch:hover{
+  cursor: pointer;
+  color:#DAD79A;
+}

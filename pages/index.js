@@ -238,11 +238,11 @@ export default function Home() {
               <div className="col-12 text-center">
                 <p className="h4 my-3">My profiles</p>
                 <ul className="list-unstyled text-center my-3">
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}>Leetcode</li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}>Codechef</li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}>GFG</li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}>Linkedin</li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}>Github</li>
+                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://leetcode.com/namandhingra90/" className={style.anch}>Leetcode</a></li>
+                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://github.com/namandhingra19" className={style.anch}>Github</a></li>
+                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://auth.geeksforgeeks.org/user/namandhingra90/" className={style.anch}>GFG</a></li>
+                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://www.linkedin.com/in/naman-dhingra-10490911a" className={style.anch}>Linkedin</a></li>
+                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://www.codechef.com/users/namandhingra" className={style.anch}>Codechef</a></li>
                 </ul>
               </div>
             </div>
