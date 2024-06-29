@@ -173,7 +173,7 @@ export const education = [
     title: "Bachelors in computer Sciences",
     college: "JMIT,affilieated with Kurushetra University",
     points: [
-      "Scored 9.1/10 till 5th sem",
+      "Scored 8.5 CGPA",
       "Good rating on various coding platform",
       "Completed more than 150+ questions on Leetcode",
       "3 star rating on Codechef",
