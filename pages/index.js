@@ -10,6 +10,7 @@ import {
   faPen,
   faRectangleList,
   faUserGraduate,
+  faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 import { Education } from "../components/Educations";
 
@@ -25,25 +26,49 @@ export default function Home() {
     <div className="container-fluid row" style={{ backgroundColor: "#0D1116" }}>
       {/* navbar */}
       <div
-        className="col-3 vh-100 sticky-top"
+        className="col-3  vh-100 sticky-top"
         style={{ backgroundColor: "#000028" }}
       >
         <div className="d-flex flex-column justify-content-center h-100 text-center">
           <img src="1.png" className="w-100"></img>
           <p className="my-5 display-6">Naman Dhingra</p>
           <ul className="list-group list-unstyled h4">
-            <li className={`mx-3 my-1 text-center `+style.lihover} onClick={() => window.location.replace("/#about")}>About</li>
-            <li className={`mx-3 my-1 text-center `+style.lihover} onClick={() => window.location.replace("/#skills")}>Skills</li>
-            <li className={`mx-3 my-1 text-center `+style.lihover} onClick={() => window.location.replace("/#projects")}>Projects</li>
-            <li className={`mx-3 my-1 text-center `+style.lihover} onClick={() => window.location.replace("/#education")}>Education</li>
-            <li className={`mx-3 my-1 text-center `+style.lihover} onClick={() => window.location.replace("/#contact")}>Contact</li>
+            <li
+              className={`mx-3 my-1 text-center ` + style.lihover}
+              onClick={() => window.location.replace("/#about")}
+            >
+              About
+            </li>
+            <li
+              className={`mx-3 my-1 text-center ` + style.lihover}
+              onClick={() => window.location.replace("/#skills")}
+            >
+              Skills
+            </li>
+            <li
+              className={`mx-3 my-1 text-center ` + style.lihover}
+              onClick={() => window.location.replace("/#projects")}
+            >
+              Projects
+            </li>
+            <li
+              className={`mx-3 my-1 text-center ` + style.lihover}
+              onClick={() => window.location.replace("/#education")}
+            >
+              Education
+            </li>
+            <li
+              className={`mx-3 my-1 text-center ` + style.lihover}
+              onClick={() => window.location.replace("/#contact")}
+            >
+              Contact
+            </li>
           </ul>
         </div>
       </div>
 
       <div className="col-9 pt-5 px-4">
         <div className="row">
-
           {/* About */}
           <div className="col-12" id="about">
             <div className="display-3">
@@ -78,6 +103,57 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Skills */}
+          <div className="col-12" id="skills">
+            <div className="display-3">
+              <FontAwesomeIcon
+                icon={faBriefcase}
+                size="2xs"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+              />
+              <span className="mx-4">Experience</span>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Software Engineer Intern, New Delhi</h4>
+                <h6>Vignam Pvt Limited</h6>
+                <p>(Feb 2023 - June 2024)</p>
+                <ul>
+                  <li>
+                    Spearheaded the development of a dynamic EdTech platform,
+                    implementing end-to-end functionality for 10+ modules, 3
+                    distinct user roles (teacher, admin, student), teacher
+                    dashboards, and live class features using React.js, Node.js,
+                    and MongoDB.
+                  </li>
+                  <li>
+                    Utilized AWS services like EC2 and S3, achieving a 99.9%
+                    uptime for hosting and storage solutions, ensuring optimal
+                    performance and reliability for over 100+ users.
+                  </li>
+                  <li>
+                    Engineered seamless user experiences by translating the web
+                    application into a React Native Android app, increasing
+                    mobile user engagement by 30%.
+                  </li>
+                  <li>
+                    Facilitated seamless communication with 50+ customers,
+                    adeptly coordinating and interacting to understand technical
+                    and business requirements, and delivering tailored
+                    solutions.
+                  </li>
+                  <li>
+                    Demonstrated versatility by optimizing development workflows
+                    through Python scripting, reducing development time by 20%
+                    and enhancing team productivity.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           {/* Skills */}
           <div className="col-12" id="skills">
             <div className="display-3">
@@ -238,11 +314,46 @@ export default function Home() {
               <div className="col-12 text-center">
                 <p className="h4 my-3">My profiles</p>
                 <ul className="list-unstyled text-center my-3">
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://leetcode.com/namandhingra90/" className={style.anch}>Leetcode</a></li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://github.com/namandhingra19" className={style.anch}>Github</a></li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://auth.geeksforgeeks.org/user/namandhingra90/" className={style.anch}>GFG</a></li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://www.linkedin.com/in/naman-dhingra-10490911a" className={style.anch}>Linkedin</a></li>
-                  <li className={`d-inline-block mx-3 h5 `+style.lifont}><a href="https://www.codechef.com/users/namandhingra" className={style.anch}>Codechef</a></li>
+                  <li className={`d-inline-block mx-3 h5 ` + style.lifont}>
+                    <a
+                      href="https://leetcode.com/namandhingra90/"
+                      className={style.anch}
+                    >
+                      Leetcode
+                    </a>
+                  </li>
+                  <li className={`d-inline-block mx-3 h5 ` + style.lifont}>
+                    <a
+                      href="https://github.com/namandhingra19"
+                      className={style.anch}
+                    >
+                      Github
+                    </a>
+                  </li>
+                  <li className={`d-inline-block mx-3 h5 ` + style.lifont}>
+                    <a
+                      href="https://auth.geeksforgeeks.org/user/namandhingra90/"
+                      className={style.anch}
+                    >
+                      GFG
+                    </a>
+                  </li>
+                  <li className={`d-inline-block mx-3 h5 ` + style.lifont}>
+                    <a
+                      href="https://www.linkedin.com/in/naman-dhingra-10490911a"
+                      className={style.anch}
+                    >
+                      Linkedin
+                    </a>
+                  </li>
+                  <li className={`d-inline-block mx-3 h5 ` + style.lifont}>
+                    <a
+                      href="https://www.codechef.com/users/namandhingra"
+                      className={style.anch}
+                    >
+                      Codechef
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
