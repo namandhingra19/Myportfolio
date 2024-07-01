@@ -22,6 +22,15 @@ export default function Home() {
     });
   }, []);
 
+  const handleDownload = () => {
+    // The PDF file should be accessible at the root of the public folder
+    const pdfUrl = `/Naman_Dhingra_MERN.pdf`;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Naman_Dhingra_MERN.pdf"; // This will be the default filename
+    link.click();
+  };
+
   return (
     <div className="container-fluid row" style={{ backgroundColor: "#0D1116" }}>
       {/* navbar */}
@@ -33,6 +42,14 @@ export default function Home() {
           <img src="1.png" className="w-100"></img>
           <p className="my-5 display-6">Naman Dhingra</p>
           <ul className="list-group list-unstyled h4">
+            <li
+              className={`mx-3 my-1 text-center ` + style.lihover}
+              onClick={() => {
+                handleDownload();
+              }}
+            >
+              Resume
+            </li>
             <li
               className={`mx-3 my-1 text-center ` + style.lihover}
               onClick={() => window.location.replace("/#about")}
