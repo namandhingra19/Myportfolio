@@ -4,57 +4,37 @@ export const about = {
   line3: `With a keen eye for detail and a commitment to staying abreast of the latest industry trends, I thrive on transforming complex ideas into intuitive user experiences. Let's connect and explore how we can bring your ideas to life!`,
 };
 const skills = [
-  {
-    title: "ReactJS",
-    rating: 6,
-  },
-
-  {
-    title: "NodeJS",
-    rating: 6,
-  },
-
-  {
-    title: "Javascript",
-    rating: 7,
-  },
-  {
-    title: "C++",
-    rating: 8,
-  },
-  {
-    title: "C",
-    rating: 9,
-  },
-  {
-    title: "Bootstrap",
-    rating: 6,
-  },
-  {
-    title: "VScode",
-    rating: 7,
-  },
-  {
-    title: "Mongodb",
-    rating: 8,
-  },
-  {
-    title: "Typescript",
-    rating: 6,
-  },
-  {
-    title: "Nextjs",
-    rating: 6,
-  },
-  {
-    title: "SQL",
-    rating: 3,
-  },
-  {
-    title: "Git",
-    rating: 6,
-  },
+  { title: "ReactJS", rating: 6 },
+  { title: "NodeJS", rating: 6 },
+  { title: "JavaScript", rating: 7 },
+  { title: "TypeScript", rating: 6 },
+  { title: "Next.js", rating: 6 },
+  { title: "MongoDB", rating: 8 },
+  { title: "SQL", rating: 4 },
+  { title: "PostgreSQL", rating: 3 },
+  { title: "ExpressJS", rating: 6 },
+  { title: "Redux", rating: 6 },
+  { title: "HTML5", rating: 8 },
+  { title: "CSS3", rating: 7 },
+  { title: "Bootstrap", rating: 6 },
+  { title: "TailwindCSS", rating: 5 },
+  { title: "Material-UI", rating: 5 },
+  { title: "Python", rating: 7 },
+  { title: "C++", rating: 8 },
+  { title: "C", rating: 9 },
+  { title: "Git", rating: 6 },
+  { title: "Docker", rating: 5 },
+  { title: "REST APIs", rating: 7 },
+  { title: "WebSocket", rating: 4 },
+  { title: "VSCode", rating: 7 },
+  { title: "Linux", rating: 6 },
+  { title: "LangChain", rating: 5 },
+  { title: "OpenAI API", rating: 5 },
+  { title: "React Native", rating: 5 },
+  { title: "Jest", rating: 4 }, // Testing
+  { title: "Figma", rating: 3 }, // UI Collaboration
 ];
+
 export const projects = [
   {
     name: "Web Applications",
@@ -196,4 +176,33 @@ export const education = [
     subjects: ["Physics", "Mathematics", "Chemistry"],
   },
 ];
+
+export const experience = [
+  {
+    title: "Full Stack Developer",
+    company: "Essence Software Solutions Pvt. Ltd.",
+    location: "Gurugram",
+    date: "July 2024 – Present",
+    points: [
+      "Worked on a college management project for a US-based client, added AI lead generation and student management features.",
+      "Integrated Docker, PostgreSQL, and SQL to modernize old systems and improve scalability.",
+      "Used LangChain to build advanced AI tools for leads and management automation.",
+      "Developed real-time AI chatbots using agent systems and WebSocket.",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Vignam Pvt Ltd.",
+    location: "New Delhi",
+    date: "Feb 2023 – June 2024",
+    points: [
+      "Helped build an EdTech platform from scratch using React.js, Node.js, and MongoDB.",
+      "Worked on teacher, admin, and student roles; created dashboards and live class features.",
+      "Used AWS EC2 and S3 to deploy and keep the system up 99.9% of the time.",
+      "Talked to over 50 customers to understand needs and deliver solutions.",
+      "Wrote Python scripts to make development faster for the team.",
+    ],
+  },
+];
+
 export default skills;

@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import Ranger from "../components/ranger";
-import skills, { about, education, projects } from "../modals/seeds";
+import skills, {
+  about,
+  education,
+  projects,
+  experience,
+} from "../modals/seeds";
 import style from "../styles/Home.module.css";
 import { Projecttype } from "../components/projectType";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,10 +29,10 @@ export default function Home() {
 
   const handleDownload = () => {
     // The PDF file should be accessible at the root of the public folder
-    const pdfUrl = `/Naman_Dhingra_MERN.pdf`;
+    const pdfUrl = `/Naman_July20.pdf`;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Naman_Dhingra_MERN.pdf"; // This will be the default filename
+    link.download = "Naman_July20.pdf"; // This will be the default filename
     link.click();
   };
 
@@ -120,8 +125,44 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Skills */}
           <div className="col-12" id="skills">
+            <div className="display-3">
+              <FontAwesomeIcon icon={faBriefcase} size="2xs" />
+              <span className="mx-4">Experience</span>
+            </div>
+            <div className="row">
+              <div className="col-1 d-flex justify-content-center">
+                <div
+                  className="h-100"
+                  style={{ width: "0.2rem", backgroundColor: "#8656DA" }}
+                  data-aos="fade-down"
+                  data-aos-offset="100"
+                  data-aos-delay="100"
+                  data-aos-duration="2000"
+                ></div>
+              </div>
+              <div className="col-11">
+                {experience.map((job, i) => (
+                  <div className="mb-4" key={i}>
+                    <h4>
+                      <span></span>
+                      {job.title}, {job.location}
+                    </h4>
+                    <h6>{job.company}</h6>
+                    <p>{job.date}</p>
+                    <ul>
+                      {job.points.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Skills */}
+          {/* <div className="col-12" id="skills">
             <div className="display-3">
               <FontAwesomeIcon
                 icon={faBriefcase}
@@ -170,7 +211,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Skills */}
           <div className="col-12" id="skills">
             <div className="display-3">
